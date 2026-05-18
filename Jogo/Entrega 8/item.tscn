@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c40rg2ulsj47o"]
+
+[ext_resource type="Script" uid="uid://b8u4gvf82kf1x" path="res://Entrega 8/item.gd" id="1_jqlcu"]
+[ext_resource type="Texture2D" uid="uid://bo4ydvqft6jes" path="res://Entrega 8/Itens/13.png" id="2_jqlcu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jqlcu"]
+radius = 25.0799
+
+[node name="Item" type="Area2D"]
+position = Vector2(459, 248)
+collision_layer = 2
+script = ExtResource("1_jqlcu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_jqlcu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jqlcu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

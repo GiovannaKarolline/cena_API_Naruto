@@ -21,10 +21,6 @@ func _physics_process(_delta: float) -> void:
 		_update_animation(Vector2.ZERO, false)
 	
 	move_and_slide()
-	var tela = get_viewport_rect().size
-	var margem = 30
-	global_position.x = clamp(global_position.x, margem, tela.x - margem)
-	global_position.y = clamp(global_position.y, margem, tela.y - margem)
 	
 func _update_animation(dir: Vector2, moving: bool) -> void:
 	if moving:

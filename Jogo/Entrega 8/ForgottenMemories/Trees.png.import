@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dv6clqp7lhpjx"
-path="res://.godot/imported/scale_03_02.png-f1a28b6398f931126f6974ab1e23d787.ctex"
+uid="uid://cxhvpk2atuvun"
+path="res://.godot/imported/Trees.png-151e3ad1625522d56f79b5cbddeed613.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entrega 6/fantasy_gui_png/scale_03_02.png"
-dest_files=["res://.godot/imported/scale_03_02.png-f1a28b6398f931126f6974ab1e23d787.ctex"]
+source_file="res://Entrega 8/ForgottenMemories/Trees.png"
+dest_files=["res://.godot/imported/Trees.png-151e3ad1625522d56f79b5cbddeed613.ctex"]
 
 [params]
 

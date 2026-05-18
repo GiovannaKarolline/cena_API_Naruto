@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6u02y2ceye4q"
-path="res://.godot/imported/scale_01_02.png-79000a4c3720faf39588a46ef3194ae1.ctex"
+uid="uid://c4baoklgqswi3"
+path="res://.godot/imported/21.png-7b15c926244f613700ef503c56a442ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entrega 6/fantasy_gui_png/scale_01_02.png"
-dest_files=["res://.godot/imported/scale_01_02.png-79000a4c3720faf39588a46ef3194ae1.ctex"]
+source_file="res://Entrega 8/Itens/21.png"
+dest_files=["res://.godot/imported/21.png-7b15c926244f613700ef503c56a442ae.ctex"]
 
 [params]
 
