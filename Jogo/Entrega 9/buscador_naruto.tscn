@@ -1,31 +1,25 @@
-[gd_scene load_steps=13 format=3 uid="uid://64blvkik863x"]
+[gd_scene load_steps=12 format=3 uid="uid://64blvkik863x"]
 
 [ext_resource type="Script" uid="uid://cwh65ejgc7gp8" path="res://Entrega 9/buscador_naruto.gd" id="1_ugxro"]
 [ext_resource type="Texture2D" uid="uid://hpi2csin87mf" path="res://Entrega 9/fundo.png" id="2_yje1h"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ykm5n"]
+content_margin_left = 30.0
 bg_color = Color(0.419608, 0.0156863, 0.0823529, 0.698039)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u1epe"]
-bg_color = Color(0.114897, 0.114897, 0.114897, 0.835294)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5glah"]
-bg_color = Color(0.114897, 0.114897, 0.114897, 0.835294)
+bg_color = Color(0.0768358, 0.0768358, 0.0768358, 0.835294)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v6smw"]
-bg_color = Color(0.114897, 0.114897, 0.114897, 0.835294)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u1epe"]
+bg_color = Color(0, 0, 0, 0.956863)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
@@ -89,7 +83,10 @@ offset_left = 51.0
 offset_top = 157.0
 offset_right = 518.0
 offset_bottom = 232.0
+theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = SubResource("StyleBoxFlat_ykm5n")
+placeholder_text = "Digite o ID aqui"
+emoji_menu_enabled = false
 
 [node name="btnBuscar" type="Button" parent="."]
 layout_mode = 0
@@ -97,9 +94,10 @@ offset_left = 528.0
 offset_top = 157.0
 offset_right = 697.0
 offset_bottom = 232.0
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_u1epe")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_5glah")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_5glah")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5glah")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_v6smw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5glah")
 theme_override_styles/normal = SubResource("StyleBoxFlat_u1epe")
 text = "Buscar"
 
@@ -125,9 +123,9 @@ label_settings = SubResource("LabelSettings_f7d3q")
 
 [node name="lblNome" type="Label" parent="."]
 layout_mode = 0
-offset_left = 277.0
+offset_left = 314.0
 offset_top = 259.0
-offset_right = 583.0
+offset_right = 620.0
 offset_bottom = 310.0
 text = "Nome:"
 label_settings = SubResource("LabelSettings_q7dko")
@@ -135,26 +133,26 @@ label_settings = SubResource("LabelSettings_q7dko")
 [node name="lblPai" type="Label" parent="."]
 layout_mode = 0
 offset_left = 51.0
-offset_top = 371.0
+offset_top = 368.0
 offset_right = 263.0
-offset_bottom = 423.0
+offset_bottom = 420.0
 text = "Pai: "
 label_settings = SubResource("LabelSettings_hf4rm")
 
 [node name="lblMae" type="Label" parent="."]
 layout_mode = 0
-offset_left = 51.0
-offset_top = 321.0
-offset_right = 261.0
-offset_bottom = 371.0
+offset_left = 50.0
+offset_top = 315.0
+offset_right = 260.0
+offset_bottom = 365.0
 text = "Mãe: "
 label_settings = SubResource("LabelSettings_8ekla")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 0
-offset_left = 277.0
+offset_left = 314.0
 offset_top = 342.0
-offset_right = 583.0
+offset_right = 620.0
 offset_bottom = 485.0
 
 [node name="listaJutsus" type="VBoxContainer" parent="ScrollContainer"]
@@ -164,9 +162,9 @@ layout_mode = 2
 
 [node name="tituloListaJutsus" type="Label" parent="."]
 layout_mode = 0
-offset_left = 277.0
+offset_left = 314.0
 offset_top = 310.0
-offset_right = 350.0
+offset_right = 387.0
 offset_bottom = 337.0
 text = "Jutsus:"
 label_settings = SubResource("LabelSettings_f3oou")
