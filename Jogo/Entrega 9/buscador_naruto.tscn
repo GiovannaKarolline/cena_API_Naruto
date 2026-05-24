@@ -14,64 +14,78 @@ script = ExtResource("1_ugxro")
 [node name="inputID" type="LineEdit" parent="."]
 layout_mode = 0
 offset_left = 150.0
-offset_top = 203.0
+offset_top = 177.0
 offset_right = 617.0
-offset_bottom = 278.0
+offset_bottom = 252.0
 
 [node name="btnBuscar" type="Button" parent="."]
 layout_mode = 0
 offset_left = 627.0
-offset_top = 203.0
+offset_top = 177.0
 offset_right = 796.0
-offset_bottom = 278.0
+offset_bottom = 252.0
 text = "Buscar"
 
 [node name="lblErro" type="Label" parent="."]
 layout_mode = 0
-offset_left = 29.0
-offset_top = 31.0
-offset_right = 230.0
-offset_bottom = 79.0
+offset_left = 250.0
+offset_top = 115.0
+offset_right = 700.0
+offset_bottom = 152.0
+text = "Busque as informações do personagem de Naruto pelo ID!"
+horizontal_alignment = 1
 
 [node name="lblID" type="Label" parent="."]
 layout_mode = 0
-offset_left = 32.0
-offset_top = 20.0
-offset_right = 230.0
-offset_bottom = 79.0
+offset_left = 150.0
+offset_top = 270.0
+offset_right = 362.0
+offset_bottom = 332.0
+text = "ID do personagem:"
 
 [node name="lblNome" type="Label" parent="."]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 28.0
-offset_right = 80.0
-offset_bottom = 51.0
+offset_left = 374.0
+offset_top = 270.0
+offset_right = 617.0
+offset_bottom = 321.0
+text = "Nome:"
 
 [node name="lblPai" type="Label" parent="."]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 11.0
-offset_right = 222.0
-offset_bottom = 63.0
+offset_left = 150.0
+offset_top = 382.0
+offset_right = 362.0
+offset_bottom = 434.0
+text = "Pai: "
 
 [node name="lblMae" type="Label" parent="."]
 layout_mode = 0
-offset_left = 12.0
-offset_top = 13.0
-offset_right = 222.0
-offset_bottom = 63.0
+offset_left = 150.0
+offset_top = 332.0
+offset_right = 360.0
+offset_bottom = 382.0
+text = "Mãe: "
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 0
-offset_left = 488.0
-offset_top = 112.0
-offset_right = 528.0
-offset_bottom = 152.0
+offset_left = 374.0
+offset_top = 378.0
+offset_right = 617.0
+offset_bottom = 521.0
 
 [node name="listaJutsus" type="VBoxContainer" parent="ScrollContainer"]
 layout_mode = 2
 
 [node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="tituloListaJutsus" type="Label" parent="."]
+layout_mode = 0
+offset_left = 374.0
+offset_top = 321.0
+offset_right = 447.0
+offset_bottom = 344.0
+text = "Jutsus:"
 
 [connection signal="pressed" from="btnBuscar" to="." method="_on_btn_buscar_pressed"]
 [connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]

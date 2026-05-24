@@ -21,7 +21,7 @@ func _on_btn_buscar_pressed() -> void:
 	lblErro.text = "Buscando as informações do(a) personagem..."
 	removerDadosAntigos()
 	
-	var url = "http://api-dattebayo.vercel.app/characters/" + idPersonagem
+	var url = "https://dattebayo-api.onrender.com/characters/" + idPersonagem
 	httpRequest.request(url)
 	pass # Replace with function body.
 
@@ -57,7 +57,7 @@ func preencherInformacoes(dados: Dictionary):
 	lblMae.text = "Mãe: " + family.get("mother", "Desconhecido")
 	
 	var jutsus = dados.get("jutsu", [])
-	if jutsus.size > 0:
+	if jutsus.size() > 0:
 		for item in jutsus:
 			var lblJutsu = Label.new()
 			lblJutsu.text = "* " + str(item)
